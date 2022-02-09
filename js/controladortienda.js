@@ -1,5 +1,5 @@
 //importacion de elementos
-import {llenarTienda} from "./llenartienda.js"
+import {llenarTienda} from "./controladorllenartienda.js"
 
 //llamo a la funcion llenar tienda
 llenarTienda()

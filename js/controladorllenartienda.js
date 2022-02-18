@@ -32,6 +32,11 @@ export function llenarTienda(){
     imagen.classList.add("p-2")
     imagen.src=producto.foto
 
+    let separador=document.createElement("hr")
+    separador.classList.add("w-50")
+    separador.classList.add("mx-auto")
+    separador.classList.add("d-block")
+
     let nombreProducto=document.createElement("h4")
     nombreProducto.textContent=producto.nombre
 
@@ -39,13 +44,23 @@ export function llenarTienda(){
     descripcionProducto.textContent=producto.descripcion
 
     let precioProducto=document.createElement("h6")
-    precioProducto.textContent=producto.precio
+    precioProducto.textContent="$"+producto.precio
+
+    let botonAmpliarInfo=document.createElement("button")
+    botonAmpliarInfo.setAttribute("type","button")
+    botonAmpliarInfo.classList.add("btn")
+    botonAmpliarInfo.classList.add("btn-outline-dark")
+    botonAmpliarInfo.classList.add("mx-3")
+    botonAmpliarInfo.classList.add("mb-3")
+    botonAmpliarInfo.textContent="Ver producto"
 
     //padres e hijos
     tarjeta.appendChild(imagen)
+    tarjeta.appendChild(separador)
     tarjeta.appendChild(nombreProducto)
     tarjeta.appendChild(descripcionProducto)
     tarjeta.appendChild(precioProducto)
+    tarjeta.appendChild(botonAmpliarInfo)
 
     columna.appendChild(tarjeta)
 

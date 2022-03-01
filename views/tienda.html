@@ -56,11 +56,26 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ...
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-4 ">
+                  <img src="" class="img-fluid w-100" id="imagenProducto" alt="">
+                </div>
+                <div class="col-12 col-md-8">
+                  <h5 id="nombreProducto">N</h5>
+                  <h5 id="precioProducto">P</h5>
+                  <h6 id="descripcionProducto">...</h6>
+                  <div class="mb-3">
+                    <label class="form-label">cantidad</label>
+                    <input type="number" class="form-control" id="cantidadProducto" value="1" min="0">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Añadir al carrito</button>
+            <button type="button" class="btn btn-danger">Añadir al carrito</button>
           </div>
         </div>
       </div>

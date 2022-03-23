@@ -40,11 +40,14 @@ export function llenarTienda(){
     let nombreProducto=document.createElement("h4")
     nombreProducto.textContent=producto.nombre
 
-    let descripcionProducto=document.createElement("h6")
-    descripcionProducto.textContent=producto.descripcion
-
     let precioProducto=document.createElement("h6")
     precioProducto.textContent="$"+producto.precio
+
+
+    let descripcionProducto=document.createElement("h6")
+    descripcionProducto.textContent=producto.descripcion
+   
+    
 
     let botonAmpliarInfo=document.createElement("button")
     botonAmpliarInfo.setAttribute("type","button")

@@ -30,6 +30,7 @@ botonAgregarCarrito.addEventListener("click",function(){
     modalInfoProducto.hide()
     agregarCarrito(carrito)
 })
+
 let botonVerCarrito=document.getElementById("botorCarrito")
 botonVerCarrito.addEventListener("click",function(){
 

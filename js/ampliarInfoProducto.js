@@ -8,7 +8,7 @@ export function ampliarInfoProducto(event){
         producto={
             foto:event.target.parentElement.querySelector("img").src,
             nombre:event.target.parentElement.querySelector("h4").textContent,
-            precio:event.target.parentElement.querySelector("h6").textContent
+            precio:event.target.parentElement.querySelector("h5").textContent
         }
         let etiquetaNombreProducto=document.getElementById("nombreProducto")
         etiquetaNombreProducto.textContent=producto.nombre

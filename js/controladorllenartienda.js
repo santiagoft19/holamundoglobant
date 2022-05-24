@@ -40,7 +40,7 @@ export function llenarTienda(){
     let nombreProducto=document.createElement("h4")
     nombreProducto.textContent=producto.nombre
 
-    let precioProducto=document.createElement("h6")
+    let precioProducto=document.createElement("h5")
     precioProducto.textContent="$"+producto.precio
 
 
